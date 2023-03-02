@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLE Prediction</title>
+</head>
+<body style="background-color: beige;">
+    <h1>VLE Prediction</h1>
+
+
+    <form action="/get_data" method="post">
+        <label>Temperature:</label> <input type='number' step="0.01"  name = 'html_Temperature'> <br><br>
+        <label>liq_phase_comp_benzene:</label> <input type = "number" step="0.001" name = 'html_liq_phase_comp_benzene'> <br><br>
+        <label>liq_phase_comp_cyclohexane:</label> <input type = 'number' step="0.001" name = "html_liq_phase_comp_cyclohexane"> <br><br>
+        <label>vapor_phase_comp_cyclohexane:</label> <input type = 'number' step="0.001" name = 'html_vapor_phase_comp_cyclohexane'> <br><br>
+        <label>Accentric_factor_benzene:</label> <input type = 'number' step="0.001" name = 'html_Accentric_factor_benzene'> <br><br>
+        <label>Accentric_factor_cyclohexane:</label> <input type = 'number' step="0.001" name = "html_Accentric_factor_cyclohexane"> <br><br>
+    
+            
+        </select> <br><br>
+
+        <input type="submit" value="VLE PREDICTION">
+
+
+    </form><br>
+    <label>Predicted VLE : </label>{{prediction}}

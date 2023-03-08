@@ -8,10 +8,10 @@ class vle_prediction():
         self.data = data
 
     def loading_files(self):
-        with open('artifacts/vle_model.pkl','rb') as file :
+        with open(r'artifacts/vle_model.pkl','rb') as file :
             self.model = pickle.load(file)
 
-        with open('artifacts/project_data.json','r') as file :
+        with open(r'artifacts/project_data.json','r') as file :
             self.project_data = json.load(file)
 
     def liq_vapor_benzene_prediction(self):
